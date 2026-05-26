@@ -4,153 +4,183 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hubungi Kami | PT Entech Security Indonesia</title>
-  <meta name="description" content="Contact PT Entech Security Indonesia for product inquiries, technical consultations, and distribution partnerships." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="Hubungi PT Entech Security Indonesia untuk informasi lebih lanjut, pertanyaan produk, atau untuk konsultasi proyek keamanan Anda." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="alternate" hreflang="id" href="https://knyf3.github.io/entech-security-website/contact.html" />
   <link rel="alternate" hreflang="en" href="https://knyf3.github.io/entech-security-website/en/contact.html" />
   <link rel="alternate" hreflang="x-default" href="https://knyf3.github.io/entech-security-website/contact.html" />
 </head>
 <body>
-  <header class="site-header" id="site-header">
-    <nav class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-mark">E</span>
-        <span class="logo-text">ENTECH <span class="logo-sub">SECURITY</span></span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="brands.html">Merek</a></li>
-        <li><a href="solutions.html">Solusi</a></li>
-        <li><a href="references.html">Referensi</a></li>
-        <li><a href="about.html">Tentang Kami</a></li>
-        <li><a href="contact.html" class="active nav-cta">Hubungi Kami</a></li>
-      </ul>
-      <li><a href="en/contact.html" class="lang-switch">🇬🇧 EN</a></li>
-      <button class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
-    </nav>
-  </header>
+<header class="site-header" id="site-header">
+  <nav class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark">E</span>
+      <span class="logo-text">ENTECH <span class="logo-sub">SECURITY</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li class="has-dropdown"><a href="products.html">Produk ▾</a>
+        <ul class="dropdown">
+          <li><a href="products.html#access-control">Kontrol Akses</a></li>
+          <li><a href="products.html#intrusion">Sistem Intrusi</a></li>
+          <li><a href="products.html#exit-hardware">Pintu Darurat</a></li>
+          <li><a href="products.html#long-range">Pembaca Jarak Jauh</a></li>
+          <li><a href="products.html#accessories">Aksesori</a></li>
+        </ul>
+      </li>
+      <li><a href="brands.html">Merek</a></li>
+      <li><a href="solutions.html">Solusi</a></li>
+      <li><a href="references.html">Referensi</a></li>
+      <li><a href="about.html">Tentang Kami</a></li>
+      <li><a href="contact.html" class="nav-cta active">Hubungi Kami</a></li>
+    </ul>
+    <a href="en/contact.html" class="lang-switch">🇬🇧 EN</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
 
-  <section class="page-hero">
-    <div class="container">
-      <div class="section-tag">Hubungi Kami</div>
+<main>
+  <section class="hero-section">
+    <div class="container fade-in">
+      <span class="section-badge">Hubungi Kami</span>
       <h1>Hubungi Tim Kami</h1>
-      <p>Have a project in mind? Need product information or a consultation? Our team is ready to assist.</p>
+      <p class="hero-subtitle">Kami siap membantu Anda dengan semua kebutuhan proyek keamanan Anda. Kirimkan pesan kepada kami atau hubungi langsung.</p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="contact-grid">
-        <!-- FORM -->
-        <div>
-          <h2 style="font-family:var(--font-head); font-size:24px; font-weight:700; margin-bottom:8px;">Kirim Pesan</h2>
-          <p style="color:var(--text-muted); font-size:15px; margin-bottom:32px;">We typically respond within 1 business day.</p>
-          <form class="contact-form" id="contactForm">
+  <section class="contact-details-section bg-alt">
+    <div class="container fade-in">
+      <div class="two-col-grid-2-1">
+        <div class="contact-form-container">
+          <h2>Kirim Pesan</h2>
+          <form class="contact-form">
             <div class="form-group">
-              <label for="name">Nama Lengkap *</label>
-              <input type="text" id="name" name="name" placeholder="Nama Anda" required />
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-              <label for="company">Perusahaan</label>
-              <input type="text" id="company" name="company" placeholder="Perusahaan or organization" />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-              <label for="email">Alamat Email *</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              <label for="company">Perusahaan (Opsional)</label>
+              <input type="text" id="company" name="company">
             </div>
             <div class="form-group">
-              <label for="phone">Telepon / WhatsApp</label>
-              <input type="tel" id="phone" name="phone" placeholder="+62 xxx xxx xxxx" />
+              <label for="phone">Nomor Telepon (Opsional)</label>
+              <input type="tel" id="phone" name="phone">
             </div>
             <div class="form-group">
-              <label for="inquiry">Jenis Pertanyaan</label>
-              <select id="inquiry" name="inquiry">
-                <option value="">— Select inquiry type —</option>
-                <option>Informasi Produk / Harga</option>
-                <option>Konsultasi Teknis</option>
-                <option>Desain Sistem / Tender Proyek</option>
-                <option>Distributor / Kemitraan</option>
-                <option>Dukungan Teknis</option>
-                <option>Lainnya</option>
-              </select>
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" name="subject" required>
             </div>
             <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" placeholder="Describe your project requirements, products of interest, or question..." required></textarea>
+              <label for="message">Pesan Anda</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn-primary" style="width:100%; justify-content:center; font-size:16px; padding:16px;">Kirim Pesan</button>
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
           </form>
         </div>
-
-        <!-- CONTACT INFO -->
-        <div>
-          <div class="contact-info-card">
-            <h3>Informasi Kontak</h3>
-            <div class="contact-info-item">
-              <div class="ci-icon">📍</div>
-              <div>
-                <h4>Alamat Kantor</h4>
-                <p>Mal Mangga Dua Square<br/>Blok A No. 175-176<br/>Jl. Gunung Sahari No. 1<br/>Jakarta, Indonesia</p>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <div class="ci-icon">✉️</div>
-              <div>
-                <h4>Email</h4>
-                <p>info@entechsecurity.co.id</p>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <div class="ci-icon">🕐</div>
-              <div>
-                <h4>Jam Kantor</h4>
-                <p>Monday – Friday<br/>09:00 – 17:00 WIB</p>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <div class="ci-icon">🌏</div>
-              <div>
-                <h4>Parent Perusahaan</h4>
-                <p><a href="https://www.entechpacific.com" target="_blank" rel="noopener" style="color:var(--teal);">Entech Pacific Pte. Ltd.</a><br/>Singapore</p>
-              </div>
-            </div>
+        <div class="contact-info-card bg-white drop-shadow fade-in">
+          <h2>Informasi Kontak</h2>
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <p><strong>Alamat Kantor:</strong><br>Mal Mangga Dua Square Lt. 3 Blok F No. 19-21, Jl. Gunung Sahari Raya No. 1, Jakarta Utara 14420</p>
           </div>
-
-          <div style="margin-top: 24px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 28px;">
-            <h4 style="font-size:16px; font-weight:700; margin-bottom:12px;">Our Sales Team</h4>
-            <div style="display:flex; flex-direction:column; gap:12px;">
-              <div style="display:flex; align-items:center; gap:12px;">
-                <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--teal),var(--navy));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:15px;font-family:var(--font-head);">Y</div>
-                <div>
-                  <div style="font-weight:600;font-size:14px;">Yudo Cahyadi</div>
-                  <div style="font-size:12px;color:var(--text-muted);">Technical & Project Sales</div>
-                </div>
-              </div>
-              <div style="display:flex; align-items:center; gap:12px;">
-                <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--teal),var(--navy));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:15px;font-family:var(--font-head);">J</div>
-                <div>
-                  <div style="font-weight:600;font-size:14px;">Johan Sitondang</div>
-                  <div style="font-size:12px;color:var(--text-muted);">Penjualan Distribusi ACT Pro</div>
-                </div>
-              </div>
-            </div>
+          <div class="info-item">
+            <span class="info-icon">📧</span>
+            <p><strong>Email:</strong><br><a href="mailto:info@entechsecurity.co.id">info@entechsecurity.co.id</a></p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">⏰</span>
+            <p><strong>Jam Kerja:</strong><br>Senin - Jumat: 09:00 - 17:00 WIB</p>
+          </div>
+          <hr>
+          <div class="info-item">
+            <span class="info-icon">🏢</span>
+            <p><strong>Perusahaan Induk:</strong><br><a href="https://www.entechpacific.com" target="_blank" rel="noopener">Entech Pacific Pte. Ltd.</a></p>
+          </div>
+          <div class="map-placeholder">
+            <!-- Replace with actual Google Maps embed later -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.906660144415!2d106.83296837503468!3d-6.1415259938444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f53e20e8b2b7%3A0xc3f8e5b6b1b7c12!2sMangga%20Dua%20Square!5e0!3m2!1sen!2sid!4v1716919280962!5m2!1sen!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-bottom" style="padding-top:0;border-top:none;">
-        <p>&copy; 2024 PT Entech Security Indonesia. Hak cipta dilindungi.</p>
-        <p>Bagian dari <a href="https://www.entechpacific.com" target="_blank" rel="noopener">Entech Pacific Group</a></p>
+  <section class="sales-team-section bg-alt">
+    <div class="container fade-in">
+      <h2 class="section-heading center">Tim Penjualan Kami</h2>
+      <p class="section-subtitle center">Jangan ragu untuk menghubungi salah satu rekan penjualan kami secara langsung.</p>
+      <div class="team-grid sales-team-grid">
+        <div class="sales-card">
+          <img src="img/team/yudo-cahyadi.jpg" alt="Yudo Cahyadi" class="sales-avatar"/>
+          <h3>Yudo Cahyadi</h3>
+          <p class="sales-role">Sales Manager - Access Control & Intrusion</p>
+          <p>Email: <a href="mailto:yudo.cahyadi@entechsecurity.co.id">yudo.cahyadi@entechsecurity.co.id</a></p>
+          <p>Tel: <a href="tel:+6281234567890">+62 812-3456-7890</a></p>
+        </div>
+        <div class="sales-card">
+          <img src="img/team/johan-sitondang.jpg" alt="Johan Sitondang" class="sales-avatar"/>
+          <h3>Johan Sitondang</h3>
+          <p class="sales-role">Sales Manager - Exit Hardware & RFID</p>
+          <p>Email: <a href="mailto:johan.sitondang@entechsecurity.co.id">johan.sitondang@entechsecurity.co.id</a></p>
+          <p>Tel: <a href="tel:+6281298765432">+62 812-9876-5432</a></p>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
+</main>
 
-  <script src="js/main.js"></script>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:12px;display:inline-flex;">
+          <span class="logo-mark">E</span>
+          <span class="logo-text" style="color:white;">ENTECH <span class="logo-sub">SECURITY</span></span>
+        </a>
+        <p>Distributor resmi sistem keamanan enterprise untuk Indonesia. Bagian dari Entech Pacific Group.</p>
+        <a href="https://www.entechpacific.com" target="_blank" rel="noopener" class="footer-link">Entech Pacific Pte. Ltd. →</a>
+      </div>
+      <div>
+        <h4>Produk</h4>
+        <ul>
+          <li><a href="products.html#access-control">Kontrol Akses</a></li>
+          <li><a href="products.html#intrusion">Sistem Intrusi</a></li>
+          <li><a href="products.html#exit-hardware">Pintu Darurat</a></li>
+          <li><a href="products.html#long-range">RFID Jarak Jauh</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Merek</h4>
+        <ul>
+          <li><a href="brands.html#acre">ACRE Security</a></li>
+          <li><a href="brands.html#siemens">Siemens SiPass</a></li>
+          <li><a href="brands.html#detex">DETEX</a></li>
+          <li><a href="brands.html#nedap">Nedap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="solutions.html">Solusi</a></li>
+          <li><a href="references.html">Referensi</a></li>
+          <li><a href="contact.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 PT Entech Security Indonesia. Hak cipta dilindungi.</p>
+      <p>Bagian dari <a href="https://www.entechpacific.com" target="_blank" rel="noopener">Entech Pacific Group</a></p>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
