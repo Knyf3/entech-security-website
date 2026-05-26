@@ -31,20 +31,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 2. Mobile nav toggle (hamburger open/close)
-    const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.navbar-menu-mobile');
+    const hamburger = document.querySelector('.nav-hamburger');
+    const mobileMenu = document.querySelector('.navbar-nav');
 
     if (hamburger && mobileMenu) {
         hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open');
-            // Optional: Toggle an 'is-active' class on hamburger for animation
+            mobileMenu.classList.toggle('mobile-open');
             hamburger.classList.toggle('is-active');
         });
 
         // Close mobile menu when a link is clicked
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.remove('open');
+                mobileMenu.classList.remove('mobile-open');
                 hamburger.classList.remove('is-active');
             });
         });

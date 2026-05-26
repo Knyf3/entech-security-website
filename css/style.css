@@ -194,10 +194,23 @@ a:hover {
     color: var(--text-muted);
 }
 
-.hamburger {
+.hamburger,
+.nav-hamburger {
     display: none; /* Hidden by default, shown on mobile */
     cursor: pointer;
     padding: 10px;
+    background: none;
+    border: none;
+    flex-direction: column;
+    gap: 5px;
+}
+.nav-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s;
 }
 
 /* HERO SECTION (homepage) */
@@ -1145,11 +1158,12 @@ a:hover {
         display: none;
     }
 
-    .hamburger {
-        display: block;
+    .nav-hamburger {
+        display: flex;
     }
 
-    .navbar-menu-mobile {
+    /* Mobile nav panel — hidden by default, shown when toggled */
+    .navbar-nav {
         display: none;
         flex-direction: column;
         background-color: var(--surface);
@@ -1160,26 +1174,25 @@ a:hover {
         border-top: 1px solid var(--border);
         box-shadow: var(--shadow-sm);
         padding: 20px 24px;
+        z-index: 999;
     }
-    .navbar-menu-mobile.open {
+    .navbar-nav.mobile-open {
         display: flex;
     }
-    .navbar-menu-mobile .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-    .navbar-menu-mobile .navbar-nav a {
-        padding: 10px 0;
+    .navbar-nav li {
         border-bottom: 1px solid var(--border-light);
-        color: var(--text);
     }
-    .navbar-menu-mobile .navbar-nav a:last-child {
+    .navbar-nav li:last-child {
         border-bottom: none;
     }
-    .navbar-menu-mobile .nav-cta {
+    .navbar-nav a {
         display: block;
-        margin-top: 20px;
+        padding: 12px 0;
+        color: var(--text);
+    }
+    .navbar-nav .nav-cta {
+        display: block;
+        margin-top: 12px;
         text-align: center;
     }
 
