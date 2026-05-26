@@ -570,8 +570,8 @@ a:hover {
 }
 
 .brands-strip img {
-    height: 60px;
-    width: 160px;
+    height: 100px;
+    width: 220px;
     object-fit: contain;
     object-position: center;
     filter: grayscale(20%);
