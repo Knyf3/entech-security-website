@@ -17,8 +17,8 @@
 <header class="site-header" id="site-header">
   <nav class="nav-container">
     <a href="index.html" class="nav-logo">
-      <span class="logo-mark">E</span>
-      <span class="logo-text">ENTECH <span class="logo-sub">SECURITY</span></span>
+      <span class="logo-mark"><img src="../img/logos/entech-logo.jpg" alt="PT Entech Security Indonesia" style="width:auto;height: 30px;"></span>
+      <span class="logo-text"><span class="logo-sub">PT ENTECH SECURITY INDONESIA</span></span>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -37,53 +37,147 @@
       <li><a href="about.html">About Us</a></li>
       <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
     </ul>
-    <a href="../brands.html" class="lang-switch">🇮🇩 ID</a>
+    <a href="../brands.html" class="lang-switch"><img src="../img/flags/id.svg" alt="ID" style="width:20px;height:13px;border-radius:2px;vertical-align:middle;margin-right:4px;">ID</a>
     <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </nav>
 </header>
 
 <main>
-  <section class="hero-section fade-in">
-    <div class="container text-center">
-      <p class="hero-badge">Our Brand Partners</p>
-      <h1 class="hero-title">World-Class Security Brands</h1>
+  <section class="hero-section" style="background-image: url('../images/hero-bg.jpg'); background-size: cover; background-position: center;">
+    <div class="container fade-in">
+      <span class="section-badge">Our Brand Partners</span>
+      <h1>World-Class Security Brands</h1>
       <p class="hero-subtitle">PT Entech Security Indonesia proudly partners with global leaders to bring cutting-edge security solutions to the Indonesian market.</p>
     </div>
   </section>
 
-  <section class="brands-list py-5 fade-in">
+  <section class="brands-list-section">
     <div class="container">
-      <div class="brand-cards-grid">
-        <div class="brand-card" id="acre">
-          <img src="../img/logo-acre.png" alt="ACRE Security" class="brand-logo-large" />
-          <h3>ACRE Security</h3>
-          <p>ACRE is a global leader in providing state-of-the-art security solutions, including the ACT365, ACTpro, and CEM AC2000 access control systems. Their comprehensive portfolio offers scalable and robust security platforms for any enterprise size, from cloud-based solutions to integrated corporate security management.</p>
-          <a href="https://www.acre-security.com" target="_blank" class="btn btn-link">Visit ACRE Security Website →</a>
+
+      <div class="brand-card fade-in" id="acre">
+        <div class="brand-logo-box">
+          <img src="../img/logos/acre-logo.png" alt="ACRE Security">
         </div>
-        <div class="brand-card" id="siemens">
-          <img src="../img/logo-siemens.png" alt="Siemens" class="brand-logo-large" />
-          <h3>Siemens SiPass</h3>
-          <p>Siemens SiPass Integrated is a powerful and flexible access control system designed for high-security and large-scale applications. It provides advanced tools for managing access rights, monitoring security events, and integrating with other building management systems, ensuring comprehensive protection for critical infrastructure.</p>
-          <a href="https://www.siemens.com/global/en/home/products/buildings/security/sipass.html" target="_blank" class="btn btn-link">Visit Siemens SiPass Website →</a>
+        <div class="brand-card-content">
+          <div class="brand-card-header">
+            <h2>ACRE Security</h2>
+            <span class="tag-pill">Access Control</span>
+          </div>
+          <div class="brand-card-body">
+            <p>ACRE is a global leader in state-of-the-art security solutions, including the ACT365 cloud platform, ACTpro controllers, and the CEM AC2000 enterprise access management system.</p>
+            <p>Their comprehensive portfolio offers scalable and robust security platforms for any enterprise size, from cloud-based solutions to fully integrated corporate security management.</p>
+            <div class="brand-products">
+              <h4>Featured Products:</h4>
+              <span class="product-pill">ACT365 Cloud Platform</span>
+              <span class="product-pill">ACTpro Door Controllers</span>
+              <span class="product-pill">Multi-Technology Card Readers</span>
+            </div>
+          </div>
+          <a href="https://www.acre-security.com" target="_blank" rel="noopener" class="btn btn-link">Visit ACRE Security Website →</a>
         </div>
-        <div class="brand-card" id="detex">
-          <img src="../img/logo-detex.png" alt="DETEX" class="brand-logo-large" />
-          <h3>DETEX</h3>
-          <p>DETEX specializes in manufacturing high-quality, durable panic hardware and alarmed exit devices. Their products are essential for ensuring life safety and security in commercial, institutional, and industrial facilities, meeting stringent building codes and providing reliable emergency egress solutions.</p>
-          <a href="https://www.detex.com" target="_blank" class="btn btn-link">Visit DETEX Website →</a>
+      </div>
+
+      <div class="brand-card fade-in" id="siemens">
+        <div class="brand-logo-box">
+          <img src="../img/logos/siemens-logo.png" alt="Siemens SiPass">
         </div>
-        <div class="brand-card" id="nedap">
-          <img src="../img/logo-nedap.png" alt="Nedap" class="brand-logo-large" />
-          <h3>Nedap</h3>
-          <p>Nedap offers innovative solutions for both access control (AEOS) and long-range identification (uPASS and TRANSIT). Their AEOS platform is renowned for its flexibility and openness, while their long-range RFID systems provide seamless and secure vehicle and personnel identification, optimizing traffic flow and enhancing perimeter security.</p>
-          <a href="https://www.nedapidentification.com" target="_blank" class="btn btn-link">Visit Nedap Website →</a>
+        <div class="brand-card-content">
+          <div class="brand-card-header">
+            <h2>Siemens SiPass</h2>
+            <span class="tag-pill">Security Management</span>
+          </div>
+          <div class="brand-card-body">
+            <p>Siemens SiPass Integrated is a powerful and flexible access control system designed for high-security and large-scale applications.</p>
+            <p>It provides advanced tools for managing access rights, monitoring security events, and integrating with other building management systems, ensuring comprehensive protection for critical infrastructure.</p>
+            <div class="brand-products">
+              <h4>Featured Products:</h4>
+              <span class="product-pill">SiPass Integrated Software</span>
+              <span class="product-pill">MC-Controller</span>
+              <span class="product-pill">Smart Card & Biometric Readers</span>
+            </div>
+          </div>
+          <a href="https://www.siemens.com/global/en/home/products/buildings/security/sipass.html" target="_blank" rel="noopener" class="btn btn-link">Visit Siemens SiPass Website →</a>
         </div>
-        <div class="brand-card" id="sielox">
-          <img src="../img/logo-sielox.png" alt="Sielox" class="brand-logo-large" />
-          <h3>Sielox</h3>
-          <p>Sielox delivers advanced access control and security management solutions, focusing on ease of use and comprehensive system integration. Their platforms are designed to provide robust security for various applications, from small businesses to large corporations, ensuring efficient and secure operations.</p>
-          <a href="https://www.sielox.com" target="_blank" class="btn btn-link">Visit Sielox Website →</a>
+      </div>
+
+      <div class="brand-card fade-in" id="detex">
+        <div class="brand-logo-box">
+          <img src="../img/logos/detex-logo.png" alt="DETEX Corporation">
         </div>
+        <div class="brand-card-content">
+          <div class="brand-card-header">
+            <h2>DETEX Corporation</h2>
+            <span class="tag-pill">Exit Hardware</span>
+          </div>
+          <div class="brand-card-body">
+            <p>DETEX specializes in manufacturing high-quality, durable panic hardware and alarmed exit devices essential for life safety and security in commercial and institutional facilities.</p>
+            <p>Their products meet stringent building codes and provide reliable emergency egress solutions, trusted across industries worldwide.</p>
+            <div class="brand-products">
+              <h4>Featured Products:</h4>
+              <span class="product-pill">Panic Bars V40/V50 Series</span>
+              <span class="product-pill">EAX-500 Alarmed Exit Device</span>
+              <span class="product-pill">Delayed Egress Hardware</span>
+            </div>
+          </div>
+          <a href="https://www.detex.com" target="_blank" rel="noopener" class="btn btn-link">Visit DETEX Website →</a>
+        </div>
+      </div>
+
+      <div class="brand-card fade-in" id="nedap">
+        <div class="brand-logo-box">
+          <img src="../img/logos/nedap-logo.png" alt="Nedap">
+        </div>
+        <div class="brand-card-content">
+          <div class="brand-card-header">
+            <h2>Nedap Identification Systems</h2>
+            <span class="tag-pill">Long Range RFID</span>
+          </div>
+          <div class="brand-card-body">
+            <p>Nedap offers innovative solutions for both access control (AEOS) and long-range identification (uPASS and TRANSIT), providing seamless and secure vehicle and personnel identification.</p>
+            <p>Their long-range RFID systems optimize traffic flow and enhance perimeter security at large facilities including offices, seaports, and airports.</p>
+            <div class="brand-products">
+              <h4>Featured Products:</h4>
+              <span class="product-pill">uPass Reach / Target UHF Readers</span>
+              <span class="product-pill">ANPR License Plate Recognition</span>
+              <span class="product-pill">SmartTag & CompactTag</span>
+            </div>
+          </div>
+          <a href="https://www.nedapidentification.com" target="_blank" rel="noopener" class="btn btn-link">Visit Nedap Website →</a>
+        </div>
+      </div>
+
+      <div class="brand-card fade-in" id="kantech">
+        <div class="brand-logo-box">
+          <img src="../img/logos/kantech-logo.png" alt="Kantech">
+        </div>
+        <div class="brand-card-content">
+          <div class="brand-card-header">
+            <h2>Kantech by Tyco</h2>
+            <span class="tag-pill">Integrated Access Control</span>
+          </div>
+          <div class="brand-card-body">
+            <p>Kantech, part of Tyco Security Products, offers powerful and easy-to-use access control solutions for businesses of all sizes.</p>
+            <p>Kantech products are known for their seamless integration and scalability, making them an ideal choice for growing security needs.</p>
+            <div class="brand-products">
+              <h4>Featured Products:</h4>
+              <span class="product-pill">EntraPass Corporate/Global Edition</span>
+              <span class="product-pill">KT-1/KT-400 Controllers</span>
+              <span class="product-pill">ioProx Readers</span>
+            </div>
+          </div>
+          <a href="https://www.kantech.com" target="_blank" rel="noopener" class="btn btn-link">Visit Kantech Website →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section bg-navy">
+    <div class="container fade-in text-center">
+      <h2>Interested in These Brands?</h2>
+      <p>Contact our team to find out which products best suit your project requirements.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
       </div>
     </div>
   </section>
@@ -94,8 +188,8 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="nav-logo" style="margin-bottom:12px;display:inline-flex;">
-          <span class="logo-mark">E</span>
-          <span class="logo-text" style="color:white;">ENTECH <span class="logo-sub">SECURITY</span></span>
+          <span class="logo-mark"><img src="../img/logos/entech-logo.jpg" alt="PT Entech Security Indonesia" style="width:auto;height:30px;"></span>
+          <span class="logo-text"><span class="logo-sub">PT ENTECH SECURITY INDONESIA</span></span>
         </a>
         <p>Authorized enterprise security systems distributor for Indonesia. Part of Entech Pacific Group.</p>
         <a href="https://www.entechpacific.com" target="_blank" rel="noopener" class="footer-link">Entech Pacific Pte. Ltd. →</a>
@@ -116,6 +210,7 @@
           <li><a href="brands.html#siemens">Siemens SiPass</a></li>
           <li><a href="brands.html#detex">DETEX</a></li>
           <li><a href="brands.html#nedap">Nedap</a></li>
+          <li><a href="brands.html#kantech">Kantech</a></li>
         </ul>
       </div>
       <div>
