@@ -128,13 +128,13 @@ a:hover {
     justify-content: center;
 }
 
-.navbar-nav {
+.nav-links {
     display: flex;
     list-style: none;
     gap: 32px;
 }
 
-.navbar-nav a {
+.nav-links a {
     color: var(--text-muted);
     font-size: 15px;
     font-weight: 500;
@@ -142,8 +142,8 @@ a:hover {
     position: relative;
 }
 
-.navbar-nav a:hover,
-.navbar-nav a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--accent);
 }
 
@@ -1154,7 +1154,7 @@ a:hover {
     h2 { font-size: 32px; }
     h3 { font-size: 24px; }
 
-    .navbar-nav, .nav-cta, .lang-switch {
+    .nav-links, .nav-cta, .lang-switch {
         display: none;
     }
 
@@ -1163,7 +1163,7 @@ a:hover {
     }
 
     /* Mobile nav panel — hidden by default, shown when toggled */
-    .navbar-nav {
+    .nav-links {
         display: none;
         flex-direction: column;
         background-color: var(--surface);
@@ -1176,21 +1176,21 @@ a:hover {
         padding: 20px 24px;
         z-index: 999;
     }
-    .navbar-nav.mobile-open {
+    .nav-links.mobile-open {
         display: flex;
     }
-    .navbar-nav li {
+    .nav-links li {
         border-bottom: 1px solid var(--border-light);
     }
-    .navbar-nav li:last-child {
+    .nav-links li:last-child {
         border-bottom: none;
     }
-    .navbar-nav a {
+    .nav-links a {
         display: block;
         padding: 12px 0;
         color: var(--text);
     }
-    .navbar-nav .nav-cta {
+    .nav-links .nav-cta {
         display: block;
         margin-top: 12px;
         text-align: center;

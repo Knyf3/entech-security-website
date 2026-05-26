@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Mobile nav toggle (hamburger open/close)
     const hamburger = document.querySelector('.nav-hamburger');
-    const mobileMenu = document.querySelector('.navbar-nav');
+    const mobileMenu = document.querySelector('.nav-links');
 
     if (hamburger && mobileMenu) {
         hamburger.addEventListener('click', () => {
