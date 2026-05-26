@@ -569,6 +569,21 @@ a:hover {
     gap: 32px;
 }
 
+.brands-strip img {
+    height: 60px;
+    width: 160px;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(20%);
+    opacity: 0.85;
+    transition: var(--transition);
+}
+
+.brands-strip img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
 .brand-logo-placeholder {
     display: inline-flex;
     align-items: center;
