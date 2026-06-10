@@ -193,6 +193,7 @@ a:hover {
 }
 
 .dropdown-menu {
+    list-style: none; 
     position: absolute;
     background-color: var(--surface);
     border: 1px solid var(--border);
@@ -660,6 +661,10 @@ a:hover {
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+}
+
+.product-card ul ul {
+    padding-left: 20px;
 }
 
 .product-card:hover {
